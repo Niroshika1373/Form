@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Styleform.css">
+
+</head>
+
+<body>
+    <h1>Course Register Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for="fn">First Name </label></td>
+                    <td><input type="text" name="First Name" placeholder="Eg : Niro" required>
+                        <p>Enter the Name</p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="mn"> Middle Name </label></td>
+                    <td><input type="text" name="Middle Name" placeholder="Enter the Middle Name" optional></td>
+                </tr>
+                <tr>
+                    <td><label for="ln">Last Name</label></td>
+                    <td><input type="text" name="Last Name" placeholder="Enter the Last Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email"> Email</label></td>
+                    <td><input type="email" name="Email" placeholder="Eg:niro@gmail.com" required>
+                        <p>Enter the Email</p>
+                        <img src="accept.png" alt="" width="15px" height="20px" id="valid">
+                        <img src="remove.png" alt="" width="15px" height="20px" id="invalid">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Mobile">Mobile Number</label></td>
+                    <td><input type="number" placeholder="1234567890" required>
+                        <p>Enter Mobile Number </p>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" required>
+                        <p>Enter the Password</p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="cp"> Confirm Password</label></td>
+                    <td><input type="password" placeholder="Enter the confirm password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB</label></td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender"> Gender</label></td>
+                    <td>
+                        <input type="radio" value="Male" name="Gender">Male
+                        <input type="radio" value="Female" name="Gender">Female
+                        <input type="radio" value="Other" name="Gender">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select name="Country" id="" required>select
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="pic"> Upload Picture</label></td>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
+
+
+            <input type="reset" value="Reset">
+        </fieldset>
+        <fieldset>
+            <legend>Course Information</legend>
+
+            <table>
+                <tr>
+                    <td><label for="course"> Course </label></td>
+                    <td>
+                        <select name="Course" required>
+                            <option value="FSWD">Full Stack Development Java</option>
+                            <option value="python">Python</option>
+                            <option value="WD">Web Development</option>
+                            <option value="SD">Software Developement</option>
+                            <option value="MS">Mern Stack</option>
+                            <option value="DS">Data Science</option>
+                            <option value="AI">Artificial Intelligence</option>
+                            <option value="ML">Machine Learning</option>
+                            <option value="DSA">Data Structures and Algorithms</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="cm"> Class Mode</label></td>
+                    <td>
+                        <input type="radio" value="Online" name="Class Mode">Online
+                        <input type="radio" value="Offline" name="Class Mode">Offline
+                    </td>
+                </tr>
+                <td> <label for="comment">Comment</label></td>
+                <td><textarea name="Comment" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+                </td>
+            </table>
+            <input type="submit" value="Submit">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

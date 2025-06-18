@@ -1,0 +1,60 @@
+body{
+    
+    background: #EEAECA;
+     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-style: IBM Plex Serif;
+    font-size: lighter;
+    font-weight: large;
+}
+form{
+    width: 500px;
+    border-radius: 5cqw;
+}
+fieldset{
+    border: 5px solid black;
+    border-radius: 20px;
+}
+legend{
+    font-size:"Arvo",serif;
+    font-weight: 50px;
+}
+input[type]{
+    border-radius: 7px;
+}
+input[required]{
+border: 2px solid rgb(180, 40, 140);
+}
+input[optional]{
+border: 2px solid rgb(107, 234, 16);
+}
+input:focus{
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+input+p{
+    display: none;
+}
+input:hover+p{
+    display:inline;
+    font-size: 15px;
+    background-color: azure;
+    border-radius: 5px;
+}
+img{
+    display: none;
+}
+input[type="email"]:focus~img#valid {
+    display: inline;
+}
+input[type="email"]:focus~img#invalid {
+    display:inline;
+}
+input[type="reset"]{
+    background-color:cyan;
+}
+input[type="submit"]{
+    background-color: cyan   
+}
+input[name="country"]{
+   background-color: #EEAECA;
+}
